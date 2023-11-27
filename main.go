@@ -1,7 +1,12 @@
 package main
 
-func main() {
-	cards := readAFile("my")
+import "fmt"
 
+func main() {
+	cards := readAFile("my_Cards")
+
+	cards.PrintDeck()
+	cards.shuffle()
+	fmt.Println("--------------------")
 	cards.PrintDeck()
 }
